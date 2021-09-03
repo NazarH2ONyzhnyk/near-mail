@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEAR Mail</title>
+    <link rel="icon" href="./img/near-logo.png">
+    <link rel="stylesheet" href="./build/tailwind.css">
+</head>
+<body>
+    <header class="">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center py-4">
+                <div class="">
+                    <a href="#" class="flex items-center text-black text-lg font-semibold">
+                        <img src="./img/near-logo.png" alt="logo" class="mr-2">
+                        NEAR Mail
+                    </a>
+                </div>
+                <div class="">
+                    <a href="#" class="btn block">
+                        Login with NEAR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="bg-indigo-50">
+        <div class="container mx-auto px-6 py-12">
+            <h2 class="text-gray-900 text-2xl font-medium">Send message</h2>
+            <form action="" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-10">
+                <div class="mt-8">
+                    <h3 class="text-gray-700 text-xl font-semibold">Recipient</h3>
+                    <input type="text" placeholder="Write here" class="mt-4 w-full input">
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-gray-700 text-xl font-semibold">Message</h3>
+                    <!-- <input type="text" placeholder="Write message" class="mt-4 w-full input"> -->
+                    <textarea name="" id="" cols="30" rows="1" class="input mt-4 w-full" placeholder="Type your meassage"></textarea>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-gray-700 text-xl font-semibold">Fee</h3>
+                    <input type="text" placeholder="Determine fee" class="mt-4 w-full input">
+                </div>
+                <div class="mt-8 pt-10">
+                    <a href="#" class="block btn w-full text-center mt-auto">Send</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto px-6">
+            <h2 class="text-gray-900 text-2xl font-medium">Incoming message</h2>
+            <div class="grid grid-cols-12 gap-x-6 mt-8 text-gray-700">
+                <div class="col-span-1">
+                    ID
+                </div>
+                <div class="col-span-2">
+                    Date
+                </div>
+                <div class="col-span-2">
+                    Sender
+                </div>
+                <div class="col-span-3">
+                    Reciever
+                </div>
+                <div class="col-span-3">
+                    Message
+                </div>
+                <div class="col-span-1">
+                    Action
+                </div>
+            </div>
+            <div class="grid grid-cols-12 gap-x-6 mt-8 text-gray-900 font-semibold">
+                <div class="col-span-1">
+                    0
+                </div>
+                <div class="col-span-2">
+                    03/09/21 12:06
+                </div>
+                <div class="col-span-2">
+                    testaccount.near
+                </div>
+                <div class="col-span-3">
+                    nazarh2onyzhnyk.near
+                </div>
+                <div class="col-span-3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit facilis ad necessitatibus quam rerum, modi in maxime reiciendis, sunt quis quisquam quibusdam ab, commodi veniam adipisci. Dicta nihil accusantium dolor.
+                </div>
+                <div class="col-span-1">
+                    <a href="#" class="text-red-600 hover:text-red-400 active:text-red-700">Delete</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 gap-x-6 mt-8 text-gray-900 font-semibold">
+                <div class="col-span-1">
+                    1
+                </div>
+                <div class="col-span-2">
+                    04/09/21 14:22
+                </div>
+                <div class="col-span-2">
+                    testaccount.near
+                </div>
+                <div class="col-span-3">
+                    nazarh2onyzhnyk.near
+                </div>
+                <div class="col-span-3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit facilis ad necessitatibus quam rerum, modi in maxime reiciendis.
+                </div>
+                <div class="col-span-1">
+                    <a href="#" class="text-red-600 hover:text-red-400 active:text-red-700">Delete</a>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+</body>
+</html>

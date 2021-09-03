@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
+
+.btn {
+    @apply py-3 px-6 bg-gradient-to-r from-indigo-700 to-blue-600 text-white font-medium btn-shadow transition duration-75 transform;
+}
+.btn:hover {
+    @apply from-indigo-600 to-blue-500;
+}
+.btn:active {
+    @apply from-indigo-700 to-blue-500 scale-95;
+}
+.btn-shadow {
+    box-shadow: none;
+}
+.btn-shadow:hover {
+    box-shadow: 0px 2px 30px rgba(59, 130, 246, 0.5);
+}
+.btn-shadow:active {
+    box-shadow: none;
+}
+
+.input {
+    @apply border border-gray-900 pl-6 py-2 bg-indigo-50 outline-none;
+}
+.input:focus {
+    @apply  rounded-none border-2 border-blue-600 box-border;
+}
+
 @tailwind utilities;
