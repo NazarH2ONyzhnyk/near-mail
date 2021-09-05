@@ -696,6 +696,60 @@ video {
   border-color: rgba(37, 99, 235, var(--tw-border-opacity));
 }
 
+.bg-gradient {
+  background: url('../img/bg-gradient.png') no-repeat;
+  background-size: cover;
+  background-position: -300px 0;
+}
+
+@media (min-width: 640px) {
+  .bg-gradient {
+    /* background: url('../img/bg-gradient.png') no-repeat;  */
+    background: red;
+    background-size: cover;
+    background-position: -500px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-gradient {
+    background: url('../img/bg-gradient.png') no-repeat;
+    background-size: cover;
+    background-position: 0 -500px;
+  }
+}
+
+.btn-home {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 200ms;
+}
+
+.btn-home:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(30, 64, 175, var(--tw-text-opacity));
+}
+
+.btn-home:active{
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

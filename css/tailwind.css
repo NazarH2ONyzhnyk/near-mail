@@ -26,5 +26,37 @@
 .input:focus {
     @apply  rounded-none border-2 border-blue-600 box-border;
 }
+.bg-gradient {
+    background: url('../img/bg-gradient.png') no-repeat; 
+    background-size: cover; 
+    background-position: -300px 0;
+}
+
+@screen sm {
+    .bg-gradient {
+        /* background: url('../img/bg-gradient.png') no-repeat;  */
+        background: red;
+        background-size: cover; 
+        background-position: -500px 0;
+    }
+    
+}
+@screen lg {
+    .bg-gradient {
+        background: url('../img/bg-gradient.png') no-repeat; 
+        background-size: cover; 
+        background-position: 0 -500px;
+    }
+    
+}
+.btn-home {
+    @apply px-6 py-2 text-white border border-white transition duration-200 font-medium;
+}
+.btn-home:hover {
+    @apply text-blue-800 bg-white;
+}
+.btn-home:active{
+    @apply bg-gray-200;
+}
 
 @tailwind utilities;
