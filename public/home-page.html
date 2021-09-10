@@ -8,134 +8,133 @@
     <link rel="icon" href="./img/near-logo.png">
     <link rel="stylesheet" href="./build/tailwind.css">
 </head>
-<body class="relative bg-gradient-to-r from-indigo-900 to-blue-900">
-<!-- <body class="relative"> -->
-    
-    <div class="hidden md:block absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-indigo-900 to-blue-900" 
-    style="background: url('./img/bg-gradient-xl.png') no-repeat; z-index: -10; background-size: cover; background-attachment: scroll;">
+<body>
+    <div class="relative w-screen h-screen">
+        
+        <img src="./img/bg-gradient-xl.png" alt="" class="absolute top-0 h-screen" style="position: fixed; z-index: -20;">    
+        <img src="./img/recs.png" alt="recs" class="absolute right-0 bottom-0" style="z-index: -10;">
+        <img src="./img/squares.png" alt="squares" class="absolute top-12" style="z-index: -10;">
+        <img src="./img/lines.png" alt="lines" class="absolute top-0 lg:left-2 2xl:left-16 hidden lg:block h-screen" style="z-index: -10;">
+
+        <header>
+            <div class="hidden md:block container mx-auto px-6">
+                <div class="flex justify-between items-center py-3">
+                    <a href="@" class="flex items-center text-white font-semibold text-lg">
+                        <img src="./img/near-logo-white.png" alt="logo" class="h-8 w-8 mr-4">
+                        NEAR Mail
+                    </a>
+                    <div class="flex items-center space-x-6">
+                        <a href="#" class="text-white hover:underline">Sign up</a>
+                        <a href="#" class="btn-home">Login with NEAR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="block md:hidden container mx-auto px-6">
+                <div class="flex items-center justify-between py-3">
+                    <a href="@" class="flex items-center text-white font-semibold text-lg">
+                        <img src="./img/near-logo-white.png" alt="logo" class="h-8 w-8 mr-4">
+                        NEAR Mail
+                    </a>
+                    <a href="#" class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="mt-6 md:mt-0">
+            <div class="container mx-auto px-6">
+                <div class="block md:flex items-center">
+                    <div class="w-full md:w-1/2">
+                        <h1 class="text-white font-bold text-8xl">NEAR Mail</h1>
+                        <p class="text-white w-full sm:w-1/2 md:w-full xl:w-1/2 text-lg mt-6">
+                            The contract provide here, enable 
+                            to send message to other account and recive message from other accounts
+                        </p>
+                        <a href="#" class="inline-block btn-home text-xl mt-7">Start messaging</a>
+                    </div>
+                    <div class="w-full md:w-1/2 mt-6 md:mt-0">
+                        <img src="./img/humanity-07-relax.png" alt="human in chair" class="w-5/6">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-6 lg:mt-0">
+            <div class="container mx-auto px-6">
+                <h2 class="text-white text-4xl font-medium">Easy 4 steps to get started with NEAR</h2>
+                <div class="grid grid-cols-1 gap-y-6 md:grid-cols-4 mt-12">
+                    <div class="">
+                        <p class="flex items-center text-white text-3xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                            #1
+                        </p>
+                        <h3 class="text-white text-2xl font-medium mt-2">Get NEAR account</h3>
+                    </div>
+                    <div class="">
+                        <p class="flex items-center text-white text-3xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                            #2
+                        </p>
+                        <h3 class="text-white text-2xl font-medium mt-2">Buy coins</h3>
+                    </div>
+                    <div class="">
+                        <p class="flex items-center text-white text-3xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                            #3
+                        </p>
+                        <h3 class="text-white text-2xl font-medium mt-2">Write the message</h3>
+                    </div>
+                    <div class="">
+                        <p class="flex items-center text-white text-3xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                            #4
+                        </p>
+                        <h3 class="text-white text-2xl font-medium mt-2">Send with NEAR</h3>
+                    </div>
+                </div>
+                <div class="hidden md:grid grid-cols-4 mt-6">
+                    <div class="flex items-center">
+                        <hr class="border border-white w-24">
+                        <div class="md:w-6 md:h-4 lg:w-6 lg:h-5 border-2 border-white rounded-full"></div>
+                        <hr class="border border-white w-full">
+                    </div>
+                    <div class="flex items-center">
+                        <hr class="border border-white w-16">
+                        <div class="md:w-6 md:h-4 lg:w-6 lg:h-5 border-2 border-white rounded-full"></div>
+                        <hr class="border border-white w-full">
+                    </div>
+                    <div class="flex items-center">
+                        <hr class="border border-white w-24">
+                        <div class="md:w-6 md:h-4 lg:w-6 lg:h-5 border-2 border-white rounded-full"></div>
+                        <hr class="border border-white w-full">
+                    </div>
+                    <div class="flex items-center">
+                        <hr class="border border-white w-24">
+                        <div class="md:w-6 md:h-4 lg:w-6 lg:h-5 border-2 border-white rounded-full"></div>
+                        <hr class="border border-white w-full">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="flex justify-center md:hidden text-center text-white my-6 pb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
+                </svg>
+                Go up
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
+                </svg>
+            </a>
+        </section>
 
     </div>
-    <img src="./img/recs.png" alt="recs" class="absolute right-0 bottom-0" style="z-index: -10;">
-    <img src="./img/squares.png" alt="squares" class="absolute top-12" style="z-index: -10;">
-    <img src="./img/lines.png" alt="lines" class="absolute top-0 lg:left-2 2xl:left-16 hidden lg:block h-screen" style="z-index: -10;">
-
-    <header>
-        <div class="hidden md:block container mx-auto px-6">
-            <div class="flex justify-between items-center py-3">
-                <a href="@" class="flex items-center text-white font-semibold text-lg">
-                    <img src="./img/near-logo-white.png" alt="logo" class="h-8 w-8 mr-4">
-                    NEAR Mail
-                </a>
-                <div class="flex items-center space-x-6">
-                    <a href="#" class="text-white hover:underline">Sign up</a>
-                    <a href="#" class="btn-home">Login with NEAR</a>
-                </div>
-            </div>
-        </div>
-        <div class="block md:hidden container mx-auto px-6">
-            <div class="flex items-center justify-between py-3">
-                <a href="@" class="flex items-center text-white font-semibold text-lg">
-                    <img src="./img/near-logo-white.png" alt="logo" class="h-8 w-8 mr-4">
-                    NEAR Mail
-                </a>
-                <a href="#" class="text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </header>
-    <section class="mt-6 md:mt-0">
-        <div class="container mx-auto px-6">
-            <div class="block md:flex items-center">
-                <div class="w-full md:w-1/2">
-                    <h1 class="text-white font-bold text-8xl">NEAR Mail</h1>
-                    <p class="text-white w-full sm:w-1/2 md:w-full xl:w-1/2 text-lg mt-6">
-                        The contract provide here, enable 
-                        to send message to other account and recive message from other accounts
-                    </p>
-                    <a href="#" class="inline-block btn-home text-xl mt-7">Start messaging</a>
-                </div>
-                <div class="w-full md:w-1/2 mt-6 md:mt-0">
-                    <img src="./img/humanity-07-relax.png" alt="human in chair" class="w-5/6">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="mt-6 lg:mt-0">
-        <div class="container mx-auto px-6">
-            <h2 class="text-white text-4xl font-medium">Easy 4 steps to get started with NEAR</h2>
-            <div class="grid grid-cols-1 gap-y-6 md:grid-cols-4 mt-12">
-                <div class="">
-                    <p class="flex items-center text-white text-3xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                        #1
-                    </p>
-                    <h3 class="text-white text-2xl font-medium mt-2">Get NEAR account</h3>
-                </div>
-                <div class="">
-                    <p class="flex items-center text-white text-3xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                        #2
-                    </p>
-                    <h3 class="text-white text-2xl font-medium mt-2">Buy coins</h3>
-                </div>
-                <div class="">
-                    <p class="flex items-center text-white text-3xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                        #3
-                    </p>
-                    <h3 class="text-white text-2xl font-medium mt-2">Write the message</h3>
-                </div>
-                <div class="">
-                    <p class="flex items-center text-white text-3xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                        #4
-                    </p>
-                    <h3 class="text-white text-2xl font-medium mt-2">Send with NEAR</h3>
-                </div>
-            </div>
-            <div class="hidden md:grid grid-cols-4 mt-6">
-                <div class="flex items-center">
-                    <hr class="border border-white w-24">
-                    <div class="md:w-6 md:h-4 lg:w-6 lg:h-5 border-2 border-white rounded-full"></div>
-                    <hr class="border border-white w-full">
-                </div>
-                <div class="flex items-center">
-                    <hr class="border border-white w-16">
-                    <div class="md:w-6 md:h-4 lg:w-6 lg:h-5 border-2 border-white rounded-full"></div>
-                    <hr class="border border-white w-full">
-                </div>
-                <div class="flex items-center">
-                    <hr class="border border-white w-24">
-                    <div class="md:w-6 md:h-4 lg:w-6 lg:h-5 border-2 border-white rounded-full"></div>
-                    <hr class="border border-white w-full">
-                </div>
-                <div class="flex items-center">
-                    <hr class="border border-white w-24">
-                    <div class="md:w-6 md:h-4 lg:w-6 lg:h-5 border-2 border-white rounded-full"></div>
-                    <hr class="border border-white w-full">
-                </div>
-            </div>
-        </div>
-        <a href="#" class="flex justify-center md:hidden text-center text-white my-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
-            </svg>
-            Go up
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
-            </svg>
-        </a>
-    </section>
 </body>
 </html>
